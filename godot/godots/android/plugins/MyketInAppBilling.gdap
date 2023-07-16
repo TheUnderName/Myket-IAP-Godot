@@ -1,0 +1,8 @@
+[config]
+
+name="MyketInAppBilling"
+binary_type="local"
+binary="GodotMyketInAppBilling.release.aar"
+
+[dependencies]
+
