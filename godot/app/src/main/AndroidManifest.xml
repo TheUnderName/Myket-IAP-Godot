@@ -4,6 +4,14 @@
 
     <uses-permission android:name="ir.mservices.market.BILLING" />
 
+    <queries>
+     <package android:name="ir.mservices.market" />
+     <intent>
+         <action android:name="ir.mservices.market.InAppBillingService.BIND" />
+         <data android:mimeType="*/*" />
+     </intent>
+    </queries>
+
     <application>
         <meta-data
             android:name = "org.godotengine.plugin.v1.MyketInAppBilling"
