@@ -25,22 +25,5 @@
 
 
 # نحوه راه اندازی
-برای راه‌اندازی پلاگین پرداخت درون برنامه مایکت، شما باید قطعه کدهای زیر را به فایل AndroidManifest.xml خود اضافه کنید:
-
-`<uses-permission android:name="ir.mservices.market.BILLING" />`
-
-
-در صورتی که targetSdkVersion پروژه شما بیشتر از 29 باشد، فیلترینگ قابلیت مشاهده بسته‌ها (package visibility filtering) بر روی آن اعمال می‌شود. این به این معناست که اگر پروژه شما توسط مایکت نصب نباشد، دیگر قادر به برقراری ارتباط با مایکت نمی‌باشد.
-
-برای حل این مشکل، می‌توانید قطعه کد زیر را داخل برچسب <manifest> در فایل AndroidManifest.xml کپی کنید:
-
-`<queries>
-    <package android:name="ir.mservices.market" />
-    <intent>
-        <action android:name="ir.mservices.market.InAppBillingService.BIND" />
-        <data android:mimeType="*/*" />
-    </intent>
-</queries>`
-
 
 مثال ها داخل فایل موجود می باشند.
